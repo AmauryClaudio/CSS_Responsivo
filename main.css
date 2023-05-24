@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: #192a56;
+  padding-top: 16px;
+  color: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+footer > .container {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.navbar {
+  background-color: #192a56;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-option {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.container h2 {
+  font-size: 30px;
+}
+
+#sobre-a-loja img {
+  width: 400px;
+  margin-right: 24px;
+}
+
+section {
+  padding: 48px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+}
+
+.produto {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  column-gap: 1%;
+  row-gap: 5%;
+}
+
+.produto li {
+  list-style: none;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.produto li img {
+  max-width: 90%;
+  height: 180px;
+}
+
+.produto li h3 {
+  margin: 16px 0;
+}
+
+.item-central {
+  margin: 0;
+}
+
+.item-central img {
+  list-style: none;
+}
+
+button {
+  display: block;
+  max-width: 90%;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: #119759;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin: 16px 0;
+  display: block;
+}
+
+.price del {
+  color: #ccc;
+  font-size: 14px;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+footer li img {
+  height: 32px;
+}
+
+@media screen and (max-width: 640px) {
+  .container,
+  .navbar {
+    max-width: 90%;
+  }
+
+  .nav-options {
+    flex-direction: column;
+  }
+
+  #sobre-a-loja {
+    display: flex;
+    font-size: 1.5em;
+  }
+
+  #sobre-a-loja .container-flex {
+    flex-direction: column;
+  }
+
+  #sobre-a-loja img {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #sobre-a-loja div h2 {
+    margin-top: 3rem;
+  }
+
+  .produto {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .container li {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .container li a {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container,
+  .navbar {
+    max-width: 90%;
+  }
+
+  #sobre-a-loja .container-flex {
+    flex-direction: column;
+  }
+
+  #sobre-a-loja img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .produto {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+  }
+}
